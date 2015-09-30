@@ -50,14 +50,12 @@ group :test do
   gem "selenium-webdriver"
 end
 
-group :development, :test do
-  gem 'sqlite3'
-end
+gem 'pg'
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
-  gem 'thin' # change this if you want to use other rack web server
+  gem 'puma' # change this if you want to use other rack web server
 end
 
 local_gemfile = File.join(File.dirname(__FILE__), "Gemfile.local")
