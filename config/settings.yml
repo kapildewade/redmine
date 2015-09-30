@@ -84,9 +84,9 @@ force_default_language_for_anonymous:
 force_default_language_for_loggedin:
   default: 0
 host_name:
-  default: localhost:3000
+  default: fast-ravine-1226.herokuapp.com
 protocol:
-  default: http
+  default: https
 feeds_limit:
   format: int
   default: 15
