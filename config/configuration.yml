@@ -54,10 +54,8 @@ default:
      delivery_method: :smtp
      smtp_settings:
        enable_starttls_auto: true
-       address: "smtp.gmail.com"
+       address: "in-v3.mailjet.com"
        port: 587
-       domain: "smtp.gmail.com" # 'your.domain.com' for GoogleApps
-       authentication: :plain
        user_name: <%= ENV["SMTP_EMAIL"] %>
        password: <%= ENV["SMTP_EMAIL_PWD"] %>
   #
